@@ -1,0 +1,635 @@
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.promo-dan-cashback {
+  position: relative;
+  font-weight: 500;
+}
+.clock-online-icon {
+  width: 87.1px;
+  position: relative;
+  height: 25px;
+  object-fit: cover;
+}
+.top-header {
+  align-self: stretch;
+  height: 35px;
+  background: linear-gradient(90deg, #070f9f, #3572ef 90%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px var(--padding-6xl);
+  box-sizing: border-box;
+  cursor: auto;
+  position: sticky;
+  z-index: 3;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--white);
+  font-family: var(--font-inter);
+}
+.logo-toyota {
+  text-decoration: none;
+  height: 50px;
+  width: 134px;
+  position: relative;
+  background-image: url(./public/logotoyota@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.whatsapp-icon {
+  width: 35px;
+  position: relative;
+  height: 35px;
+}
+.putra {
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-inter);
+  color: var(--dark);
+  text-align: left;
+}
+.button-wa1,
+.wa-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.button-wa1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0 var(--padding-xl);
+  background-color: transparent;
+  height: 70px;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  gap: var(--gap-8xs);
+}
+.button-wa1:active,
+.button-wa1:hover {
+  background-color: var(--color-lightblue);
+}
+.wa-navigation {
+  justify-content: flex-end;
+}
+.wa-button-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+.wa-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 40px;
+  position: relative;
+  height: 40px;
+  display: none;
+}
+.nav-header {
+  align-self: stretch;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding-6xl);
+  z-index: 2;
+}
+.sticky {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* <-- this is the fix */
+}
+.hero-slider,
+.car-slider {
+  align-self: stretch;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.hero-slider {
+  max-height: 100%;
+}
+.car-slider {
+  flex-shrink: 0;
+  height: 350px;
+}
+.car-slider {
+  background-color: var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.penawaran-terbaik {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.percayakan-pembelian-mobil {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-21xl);
+  color: var(--dark);
+}
+.penawaran-terbaik-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.mobil-impian-anda-menantiwuju {
+  display: block;
+}
+.blank-line,
+.blank-line1 {
+  display: block;
+  font-size: var(--font-size-lg);
+}
+.blank-line1 {
+  font-size: var(--font-size-xl);
+}
+.layanan-istimewa {
+  font-weight: 600;
+  font-family: var(--font-inter);
+}
+.mobil-impian-anda-container {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+.map-auto2000-serang-1 {
+  border: 0;
+  align-self: stretch;
+  position: relative;
+  height: 250px;
+  background-image: url(./public/map-auto2000-serang-1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.toyota-auto2000-serang {
+  margin: 0;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--dark);
+}
+.jl-raya-pandeglang {
+  margin: 0;
+}
+.toyota-auto2000-serang-container {
+  position: relative;
+  line-height: 150%;
+}
+.articles,
+.map-auto2000-serang-1-parent,
+.mobil-impian-anda-menantiwuju-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.map-auto2000-serang-1-parent {
+  align-self: stretch;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-lg);
+}
+.articles,
+.mobil-impian-anda-menantiwuju-parent {
+  gap: var(--gap-31xl);
+}
+.mobil-impian-anda-menantiwuju-parent {
+  align-self: stretch;
+  text-align: justify;
+  font-size: var(--font-size-3xl);
+  color: var(--color-darkslategray);
+}
+.articles {
+  flex: 1;
+  padding: 0 70px 0 0;
+}
+.putra-sales-icon {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-xl) var(--br-xl) 0 var(--br-101xl);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.putra1,
+.sales-consultant-toyota {
+  align-self: stretch;
+  position: relative;
+  font-weight: 600;
+}
+.putra1 {
+  font-size: var(--font-size-6xl);
+}
+.sales-consultant-toyota {
+  color: var(--primary);
+}
+.vector-icon {
+  width: 18.2px;
+  height: 18.3px;
+}
+.div,
+.vector-icon {
+  position: relative;
+}
+.putra-parent,
+.team-1,
+.vector-parent {
+  display: flex;
+  justify-content: flex-start;
+}
+.vector-parent {
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-12xs) 0;
+  gap: var(--gap-8xs);
+}
+.putra-parent,
+.team-1 {
+  flex-direction: column;
+  gap: var(--gap-3xs);
+}
+.putra-parent {
+  align-self: stretch;
+  align-items: flex-start;
+  padding: 0 var(--padding-xl);
+}
+.team-1 {
+  flex: 1;
+  border-radius: var(--br-xl);
+  border: 1px solid var(--color-lightgray);
+  box-sizing: border-box;
+  height: 502px;
+  align-items: center;
+  padding: 0 0 var(--padding-21xl);
+}
+.team-1-parent {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-mini);
+}
+.body-article,
+.team-1-parent,
+.teams,
+.testi-header {
+  display: flex;
+  justify-content: flex-start;
+}
+.teams {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-xl);
+  color: var(--dark);
+}
+.body-article,
+.testi-header {
+  align-self: stretch;
+}
+.body-article {
+  background-color: var(--white);
+  flex-direction: row;
+  align-items: flex-start;
+  padding: var(--padding-131xl) var(--padding-6xl);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--primary);
+  font-family: var(--font-inter);
+}
+.testi-header {
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-3xs);
+}
+.testi-slider-icon {
+  align-self: stretch;
+  max-width: 100%;
+  overflow: hidden;
+  height: 312px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.body-content,
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.testimonial {
+  align-self: stretch;
+  background-color: #eef9ff;
+  align-items: flex-start;
+  padding: var(--padding-131xl) var(--padding-6xl);
+  gap: 70px;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--primary);
+  font-family: var(--font-inter);
+}
+.body-content {
+  width: 1200px;
+  align-items: center;
+  z-index: 1;
+}
+.sales-promo-toyota {
+  font-weight: 600;
+}
+.developed-by-rizal,
+.sales-promo-toyota-container {
+  align-self: stretch;
+  position: relative;
+}
+.developed-by-rizal {
+  font-size: var(--font-size-sm);
+  font-weight: 300;
+}
+.footer,
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer {
+  align-self: stretch;
+  background: linear-gradient(90deg, #070f9f, #3572ef 90%);
+  justify-content: center;
+  padding: var(--padding-11xl) var(--padding-6xl);
+  gap: var(--gap-mini);
+  z-index: 0;
+}
+.home {
+  width: 1920px;
+  background-color: #f1f3f6;
+  max-width: 100%;
+  overflow: hidden;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1200px) {
+  .button-wa1 {
+    background-color: var(--white);
+  }
+  .button-wa1:active,
+  .button-wa1:hover {
+    background-color: var(--color-lightblue);
+  }
+  .home {
+    width: auto;
+    align-self: unset;
+  }
+}
+@media screen and (max-width: 960px) {
+  .button-wa1,
+  .top-header,
+  .wa-navigation {
+    display: none;
+  }
+  .wa-button,
+  .wa-button-icon {
+    display: flex;
+  }
+  .hero-slider {
+    flex: 1;
+  }
+  .articles {
+    padding-right: 0;
+    padding-bottom: var(--padding-131xl);
+    box-sizing: border-box;
+  }
+  .articles,
+  .teams {
+    flex: unset;
+    align-self: stretch;
+  }
+  .body-article {
+    flex-direction: column;
+  }
+  .body-content {
+    align-self: stretch;
+    width: auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  .top-header {
+    display: none;
+  }
+  .nav-header,
+  .top-header {
+    padding-left: var(--padding-mini);
+    padding-right: var(--padding-mini);
+    box-sizing: border-box;
+  }
+  .percayakan-pembelian-mobil {
+    font-size: var(--font-size-11xl);
+  }
+  .articles,
+  .team-1 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .team-1-parent {
+    flex-direction: column;
+  }
+  .teams {
+    flex: unset;
+    align-self: stretch;
+  }
+  .body-article {
+    flex-direction: column;
+  }
+  .body-article,
+  .testimonial {
+    padding-left: var(--padding-mini);
+    padding-right: var(--padding-mini);
+    box-sizing: border-box;
+  }
+  .body-content {
+    align-self: stretch;
+    width: auto;
+  }
+  .footer {
+    padding-left: var(--padding-mini);
+    padding-right: var(--padding-mini);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 350px) {
+  .top-header {
+    padding-left: var(--padding-mini);
+    padding-right: var(--padding-mini);
+    box-sizing: border-box;
+  }
+  .top-header,
+  .wa-navigation {
+    display: none;
+  }
+  .wa-button,
+  .wa-button-icon {
+    display: flex;
+  }
+  .nav-header {
+    padding-left: var(--padding-mini);
+    padding-right: var(--padding-mini);
+    box-sizing: border-box;
+  }
+  .hero-slider {
+    flex: 1;
+  }
+  .percayakan-pembelian-mobil {
+    font-size: var(--font-size-11xl);
+  }
+  .body-article,
+  .footer,
+  .testimonial {
+    padding-left: var(--padding-mini);
+    padding-right: var(--padding-mini);
+    box-sizing: border-box;
+  }
+  .home {
+    width: auto;
+    align-self: unset;
+  }
+}
+.silakan-hubungi-kami {
+  position: relative;
+}
+.vector-icon4 {
+  position: absolute;
+  height: 76.67%;
+  width: 76.67%;
+  top: 11.67%;
+  right: 11.67%;
+  bottom: 11.67%;
+  left: 11.67%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.close-large-fill {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.silakan-hubungi-kami-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-11xl) var(--padding-6xl);
+}
+.vector-icon5 {
+  width: 34.8px;
+  position: relative;
+  height: 35px;
+}
+.sales-putra {
+  position: relative;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--dark);
+  text-align: left;
+}
+.frame-button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-mini) var(--padding-6xl);
+  background-color: transparent;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.frame-button:active,
+.frame-button:hover {
+  background-color: var(--color-lightblue);
+}
+.sales-nani,
+.wa-drawer {
+  position: relative;
+  display: flex;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-inter);
+}
+.sales-nani {
+  width: 116px;
+  font-weight: 600;
+  color: var(--dark);
+  align-items: center;
+  flex-shrink: 0;
+}
+.wa-drawer {
+  width: 380px;
+  background-color: var(--white);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  opacity: 0;
+  height: 100%;
+  max-width: 90%;
+  overflow: auto;
+  color: var(--color-darkslategray);
+}
+.wa-drawer.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-left;
+}
+@media screen and (max-width: 1200px) {
+  .wa-drawer {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .wa-drawer {
+    display: flex;
+    padding-top: 0;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .wa-drawer {
+    padding-top: 0;
+    box-sizing: border-box;
+  }
+}

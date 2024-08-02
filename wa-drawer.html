@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./wa-drawer.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="wa-drawer" data-animate-on-scroll>
+      <div class="silakan-hubungi-kami-parent">
+        <div class="silakan-hubungi-kami">Silakan hubungi kami</div>
+        <button class="close-large-fill" id="drawercloseLargeFill">
+          <img class="vector-icon4" alt="" src="./public/vector1.svg" />
+        </button>
+      </div>
+      <button class="frame-button" id="drawerframeButton">
+        <img class="vector-icon5" alt="" src="./public/vector2.svg" />
+
+        <div class="sales-putra">Sales Putra</div>
+      </button>
+      <button class="frame-button" id="drawerframeButton1">
+        <img class="vector-icon5" alt="" src="./public/vector2.svg" />
+
+        <div class="sales-putra">Sales Nana</div>
+      </button>
+      <button class="frame-button" id="drawerframeButton2">
+        <img class="vector-icon5" alt="" src="./public/vector2.svg" />
+
+        <div class="sales-nani">Sales Nani</div>
+      </button>
+      <button class="frame-button" id="drawerframeButton3">
+        <img class="vector-icon5" alt="" src="./public/vector2.svg" />
+
+        <div class="sales-putra">Sales Hari</div>
+      </button>
+    </div>
+
+    <script>
+      var drawercloseLargeFill = document.getElementById("drawercloseLargeFill");
+      if (drawercloseLargeFill) {
+        drawercloseLargeFill.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var drawerframeButton = document.getElementById("drawerframeButton");
+      if (drawerframeButton) {
+        drawerframeButton.addEventListener("click", function () {
+          window.open("https://wa.me/6285156951045");
+        });
+      }
+      
+      var drawerframeButton = document.getElementById("drawerframeButton");
+      if (drawerframeButton) {
+        drawerframeButton.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var drawerframeButton1 = document.getElementById("drawerframeButton1");
+      if (drawerframeButton1) {
+        drawerframeButton1.addEventListener("click", function () {
+          window.open("https://wa.me/6287881266912");
+        });
+      }
+      
+      var drawerframeButton1 = document.getElementById("drawerframeButton1");
+      if (drawerframeButton1) {
+        drawerframeButton1.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var drawerframeButton2 = document.getElementById("drawerframeButton2");
+      if (drawerframeButton2) {
+        drawerframeButton2.addEventListener("click", function () {
+          window.open("https://wa.me/6281314020208");
+        });
+      }
+      
+      var drawerframeButton2 = document.getElementById("drawerframeButton2");
+      if (drawerframeButton2) {
+        drawerframeButton2.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var drawerframeButton3 = document.getElementById("drawerframeButton3");
+      if (drawerframeButton3) {
+        drawerframeButton3.addEventListener("click", function () {
+          window.open("https://wa.me/6287771657573");
+        });
+      }
+      
+      var drawerframeButton3 = document.getElementById("drawerframeButton3");
+      if (drawerframeButton3) {
+        drawerframeButton3.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>
